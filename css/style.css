@@ -1,0 +1,570 @@
+    @font-face {
+        font-family: Raleway;
+        src: url(../assets/fonts/Raleway-VariableFont_wght.ttf);
+    }
+    /* MAIN */
+    
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: Raleway;
+        font-size: 16px;
+        color: black;
+    }
+    
+     ::placeholder {
+        color: black;
+        opacity: 1;
+    }
+    
+    h2 {
+        font-family: Raleway;
+        font-size: 22px;
+        font-weight: 700;
+    }
+    
+    h3 {
+        font-family: Raleway;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    
+    h4 {
+        font-family: Raleway;
+        font-size: 16px;
+        font-weight: 700;
+    }
+    /* CLASSES */
+    
+    .row {
+        display: flex;
+    }
+    
+    .card {
+        display: flex;
+        padding-bottom: 0px;
+        flex-direction: column;
+        align-items: center;
+        gap: 4px;
+        border-radius: 20px;
+        background: #FFF;
+        box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10)
+    }
+    
+    .cardLong {
+        display: flex;
+        width: 369px;
+        height: 146px;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        border-radius: 20px;
+        background: #FFF;
+        box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
+    }
+    
+    .filter {
+        display: inline-flex;
+        height: 50px;
+        padding: 0px 12px;
+        align-items: center;
+        gap: 10px;
+        border-radius: 25px;
+        border: 2px solid #D9D9D9;
+        cursor: pointer;
+    }
+    
+    .filter:hover {
+        background-color: rgba(222, 235, 255, 1);
+    }
+    
+    input[type=checkbox]:checked~.filter {
+        background-color: rgba(222, 235, 255, 1);
+    }
+    
+    .hidden {
+        opacity: 0;
+        width: 0px;
+        height: 0px;
+    }
+    
+    .card {
+        display: flex;
+        padding: 5px;
+        flex-direction: column;
+        align-items: center;
+        width: 243px;
+        gap: 4px;
+        border-radius: 20px;
+        background: #FFF;
+        box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
+        cursor: pointer;
+    }
+    
+    .card_img {
+        height: 120px;
+        width: 100%;
+        object-fit: cover;
+        align-self: center;
+        border-radius: 16px 16px 0px 0px;
+    }
+    
+    .card_content {
+        display: flex;
+        padding: 2px 8px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        align-self: stretch;
+    }
+    
+    .card_sponsored {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 144px;
+        width: 100%;
+        padding: 5px;
+        gap: 8px;
+        border-radius: 20px;
+        background: #FFF;
+        box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
+        cursor: pointer;
+    }
+    
+    .card_sponsored_img {
+        width: 40%;
+        height: 100%;
+        object-fit: cover;
+        flex-shrink: 0;
+        border-radius: 16px 0px 0px 16px;
+    }
+    
+    .card_sponsored_content {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        align-self: stretch;
+    }
+    
+    .card_sponsored_text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+        flex: 1 0 0;
+        align-self: stretch;
+    }
+    
+    .big_card {
+        display: flex;
+        height: 440px;
+        width: 22%;
+        flex-direction: column;
+        justify-content: stretch;
+        align-items: flex-start;
+        border-radius: 20px;
+        box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
+        cursor: pointer;
+    }
+    
+    .big_card_img {
+        height: 85%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 20px 20px 0px 0px;
+    }
+    
+    .big_card h4 {
+        padding: 20px;
+    }
+    
+    .footer_column {
+        display: flex;
+        padding: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        flex: 1 0 0;
+        align-self: stretch;
+    }
+    /* ID */
+    
+    header {
+        display: flex;
+        padding-right: 0px;
+        justify-content: space-between;
+        align-items: flex-start;
+        align-self: stretch;
+    }
+    
+    #logo {
+        width: 62px;
+        height: 20px;
+        padding: 30px;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 70px;
+        padding: 0px 25px 25px 25px;
+    }
+    
+    nav a {
+        text-decoration: none;
+        color: black;
+        padding-top: 10px;
+        border: 0px solid #ffffff;
+        border-top-width: 1px;
+    }
+    
+    nav a:hover {
+        color: #0065FC;
+        border: 0px solid #0065FC;
+        border-top-width: 1px;
+    }
+    
+    main {
+        display: flex;
+        padding: 0px 50px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 35px;
+        align-self: stretch;
+    }
+    
+    #infogroup {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 35px;
+    }
+    
+    #headline {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    
+    #searchbar {
+        display: inline-flex;
+        align-items: center;
+        gap: 24px;
+        border-radius: 15px;
+        border: 1px solid var(--grey, #F2F2F2);
+        background: white;
+    }
+    
+    #search_input {
+        width: 200px;
+        font-size: 18px;
+        font-family: Raleway;
+        font-weight: 700;
+        color: black;
+        border: none transparent;
+        outline: none;
+        flex-shrink: 1;
+    }
+    
+    #search_btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 16px;
+        border-radius: 0px 15px 15px 0px;
+        border: 1px solid #0065FC;
+        background: #0065FC;
+        cursor: pointer;
+    }
+    
+    #search_txt {
+        color: white;
+    }
+    
+    #search_icon {
+        display: none;
+    }
+    
+    #filterbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    
+    #filterlist {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    
+    #infobar {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    #sectiongroup {
+        display: flex;
+        align-items: stretch;
+        gap: 40px;
+        align-self: stretch;
+    }
+    
+    #offers_main {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 75%;
+        padding: 30px;
+        gap: 30px;
+        border-radius: 15px;
+        align-self: stretch;
+        background: #F2F2F2;
+    }
+    
+    #offers_list {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-self: center;
+        gap: 30px;
+    }
+    
+    #offers_sponsored {
+        display: flex;
+        max-width: 25%;
+        height: 100%;
+        padding: 30px;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 30px;
+        border-radius: 15px;
+        background: var(--grey, #F2F2F2);
+    }
+    
+    #sponsored_title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-self: stretch;
+    }
+    
+    #sponsored_list {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+    }
+    
+    #activities {
+        display: flex;
+        width: 100%;
+        padding: 30px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+        align-self: stretch;
+    }
+    
+    #activities_list {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+    
+    footer {
+        display: flex;
+        align-items: flex-start;
+        align-self: stretch;
+        padding: 0px 50px 50px 50px;
+    }
+    
+    footer span {
+        cursor: pointer;
+    }
+    
+    footer span:hover {
+        color: rgba(0, 101, 252, 1);
+    }
+    /* LARGE DESKTOP */
+    
+    @media (min-width:1900px) {
+        body {
+            padding: 0px 230px;
+        }
+    }
+    /*  TABLETS */
+    
+    @media (max-width: 1024px) {
+        #offers_list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        #sectiongroup {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 50px;
+            align-self: stretch;
+        }
+        #offers_main {
+            max-width: 100%;
+        }
+        #offers_sponsored {
+            display: flex;
+            max-width: 100%;
+            padding: 30px;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+            align-self: stretch;
+        }
+        #sponsored_list {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            gap: 20px;
+            align-self: stretch;
+        }
+        .card_sponsored {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 29%;
+            gap: 0px;
+        }
+        .card_sponsored_content {
+            display: flex;
+            width: 100%;
+            height: 136px;
+            padding: 10px 5px 5px 15px;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        #activities {
+            padding: 0px;
+        }
+        .big_card {
+            height: 270px;
+        }
+        .big_card_img {
+            height: 70%;
+        }
+    }
+    /* PHONES */
+    
+    @media (max-width: 375px) {
+        main {
+            padding: 0px 20px;
+        }
+        header {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #headline {
+            width: 90%;
+            align-self: center;
+        }
+        nav {
+            justify-content: space-evenly;
+            align-items: center;
+            width: 100%;
+            gap: 0px;
+        }
+        nav a {
+            width: 100%;
+            text-align: center;
+            padding: 10px 0px;
+            border: 0px solid #ffffff;
+            border-bottom-width: 2px;
+        }
+        nav a:hover {
+            color: #0065FC;
+            border: 0px solid #0065FC;
+            border-bottom-width: 2px;
+        }
+        #search_btn {
+            display: inline-flex;
+            height: 49px;
+            padding: 15px 16px;
+            align-items: center;
+        }
+        #search_txt {
+            display: none;
+        }
+        #search_icon {
+            display: block;
+        }
+        #filterlist {
+            flex-wrap: wrap;
+        }
+        .filter {
+            width: 80%;
+        }
+        .filter h4 {
+            font-size: 14px;
+        }
+        #sectiongroup {
+            flex-direction: column-reverse;
+        }
+        #offers_sponsored {
+            padding: 30px 20px;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            align-self: center;
+        }
+        #sponsored_list {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            align-self: stretch;
+        }
+        .card_sponsored {
+            max-width: 100%;
+        }
+        #offers_main {
+            padding: 0px;
+            align-items: flex-start;
+            gap: 15px;
+            background: none;
+        }
+        .card {
+            width: 100%;
+        }
+        #offers_list {
+            flex-direction: column;
+            align-self: flex-start;
+            gap: 15px;
+        }
+        #activities {
+            padding: 0px;
+            width: 100%;
+            align-self: center;
+        }
+        #activities_list {
+            flex-direction: column;
+        }
+        .big_card {
+            width: 100%;
+            height: 200px;
+        }
+        footer {
+            flex-direction: column;
+        }
+    }

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <img id="logo" src="assets/img/Logo.jpg" alt="Logo Booki">
+        <nav>
+            <a href="#offersMain">Hébergements</a>
+            <a href="#activities">Activités</a>
+        </nav>
+    </header>
+    <main>
+        <section id="infogroup">
+            <div id="headline">
+                <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+                <div>En plein centre-ville ou en pleine nature</div>
+            </div>
+            <div id="searchbar">
+                <img src="assets/icons/geoloc.svg" alt="Icone de géolocalisation">
+                <input id="search_input" type="text" placeholder="Marseille,France">
+                <button id="search_btn"><img id="search_icon" src="assets/icons/lens.svg" alt="Icone de loupe"><span id="search_txt">Rechercher</span></button>
+            </div>
+            <div id="filterbar">
+                <h3>Filtres</h3>
+                <div id="filterlist">
+                    <div>
+                        <input id="input1" class="hidden" type="checkbox">
+                        <label class="filter" for="input1">                            
+                            <img src="assets/icons/money.svg" alt="Icone de billet de banque" class="icon">
+                            <h4>Economique</h4>
+                        </label>
+                    </div>
+                    <div>
+                        <input id="input2" class="hidden" type="checkbox">
+                        <label class="filter" for="input2">
+                            <img src="assets/icons/family.svg" alt="Icone de personne" class="icon">
+                            <h4>Familial</h4>
+                        </label>
+                    </div>
+                    <div>
+                        <input id="input3" class="hidden" type="checkbox">
+                        <label class="filter" for="input3">
+                            <img src="assets/icons/romantic.svg" alt="Icone de coeur" class="icon">
+                            <h4>Romantique</h4>
+                        </label>
+                    </div>
+                    <div>
+                        <input id="input4" class="hidden" type="checkbox">
+                        <label class="filter" for="input4">
+                            <img src="assets/icons/fire.svg" alt="Icone de flamme" class="icon">
+                            <h4>Nos pépites</h4>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div id="infobar">
+                <img src="assets/icons/info.svg" alt="Icone d'information" class="icon">
+                <span>Plus de 500 logements sont disponibles dans cette ville</span>
+            </div>
+        </section>
+        <section id="sectiongroup">
+            <div id="offers_main">
+                <h2>Hébergements à Marseille</h2>
+                <div id="offers_list">
+                    <div class="card">
+                        <img class="card_img" src="assets/img/hotel_du_port.jpg" alt="Photo d'une chambre de l'hôtel">
+                        <div class="card_content">
+                            <h4>Hôtel du port</h4>
+                            <span>Nuits à partir de 52€</span>
+                            <div class="stars">
+                                <img src="assets/icons/bluestar.svg" alt="Icone d'étoile pleine">
+                                <img src="assets/icons/bluestar.svg" alt="Icone d'étoile pleine">
+                                <img src="assets/icons/bluestar.svg" alt="Icone d'étoile pleine">
+                                <img src="assets/icons/bluestar.svg" alt="Icone d'étoile pleine">
+                                <img src="assets/icons/greystar.svg" alt="Icone d'étoile vide">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card_img" src="assets/img/chezAmina.jpg" alt="Photo d'une chambre de l'hôtel">
+                        <div class="card_content">
+                            <h4>Hôtel chez Amina</h4>
+                            <span>Nuits à partir de 96€</span>
+                            <div class="stars">
+                                <img src="assets/icons/bluestar.svg" alt="Icone d'étoile pleine">
+                                <img src="assets/icons/bluestar.svg" alt="Icone d'étoile pleine">
+                                <img src="assets/icons/bluestar.svg" alt="Icone d'étoile pleine">
+                                <img src="assets/icons/bluestar.svg" alt="Icone d'étoile pleine">
+                                <img src="assets/icons/greystar.svg" alt="Icone d'étoile vide">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card_img" src="assets/img/les_mouettes.jpg" alt="Photo d'une chambre de l'hôtel">
+                        <div class="card_content">
+                            <h4>Hôtel Les mouettes</h4>
+                            <span>Nuits à partir de 76€</span>
+                            <div class="stars">
+                                <img src="assets/icons/bluestar.svg" alt="Icone d'étoile pleine">
+                                <img src="assets/icons/bluestar.svg" alt="Icone d'étoile pleine">
+                                <img src="assets/icons/bluestar.svg" alt="Icone d'étoile pleine">
+                                <img src="assets/icons/bluestar.svg" alt="Icone d'étoile pleine">
+                                <img src="assets/icons/greystar.svg" alt="Icone d'étoile vide">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card_img" src="assets/img/hotel_de_la_mer.jpg" alt="Photo d'une chambre de l'hôtel">
+                        <div class="card_content">
+                            <h4>Hôtel de la mer</h4>
+                            <span>Nuits à partir de 46€</span>
+                            <div class="stars">
+                                <img src="assets/icons/bluestar.svg" alt="Icone d'étoile pleine">
+                                <img src="assets/icons/bluestar.svg" alt="Icone d'étoile pleine">
+                                <img src="assets/icons/bluestar.svg" alt="Icone d'étoile pleine">
+                                <img src="assets/icons/bluestar.svg" alt="Icone d'étoile pleine">
+                                <img src="assets/icons/greystar.svg" alt="Icone d'étoile vide">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card_img" src="assets/img/auberge_la_canebiere.jpg" alt="Photo d'une chambre de l'hôtel">
+                        <div class="card_content">
+                            <h4>Auberge La Canebière</h4>
+                            <span>Nuits à partir de 25€</span>
+                            <div class="stars">
+                                <img src="assets/icons/bluestar.svg" alt="Icone d'étoile pleine">
+                                <img src="assets/icons/bluestar.svg" alt="Icone d'étoile pleine">
+                                <img src="assets/icons/bluestar.svg" alt="Icone d'étoile pleine">
+                                <img src="assets/icons/bluestar.svg" alt="Icone d'étoile pleine">
+                                <img src="assets/icons/greystar.svg" alt="Icone d'étoile vide">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card_img" src="assets/img/auberge_le_panier.jpg" alt="Photo d'une chambre de l'hôtel">
+                        <div class="card_content">
+                            <h4>Auberge Le Panier</h4>
+                            <span>Nuits à partir de 23€ </span>
+                            <div class="stars">
+                                <img src="assets/icons/bluestar.svg" alt="Icone d'étoile pleine">
+                                <img src="assets/icons/bluestar.svg" alt="Icone d'étoile pleine">
+                                <img src="assets/icons/bluestar.svg" alt="Icone d'étoile pleine">
+                                <img src="assets/icons/bluestar.svg" alt="Icone d'étoile pleine">
+                                <img src="assets/icons/greystar.svg" alt="Icone d'étoile vide">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h3>Afficher plus</h3>
+            </div>
+            <div id="offers_sponsored">
+                <div id="sponsored_title">
+                    <h2>Les plus populaires</h2>
+                    <img src="assets/icons/graph.svg" alt="Icone de graphique">
+                </div>
+                <div id="sponsored_list">
+                    <div class="card_sponsored">
+                        <img class="card_sponsored_img" src="assets/img/auberge_la_canebiere.jpg" alt="Photo d'une chambre de l'hôtel">
+                        <div class="card_sponsored_content">
+                            <div class="card_sponsored_text">
+                                <h4>Auberge la Canebière</h4>
+                                <span>Nuits à partir de 25€</span>
+                            </div>
+                            <div class="stars">
+                                <img src="assets/icons/bluestar.svg" alt="Icone d'étoile pleine">
+                                <img src="assets/icons/bluestar.svg" alt="Icone d'étoile pleine">
+                                <img src="assets/icons/bluestar.svg" alt="Icone d'étoile pleine">
+                                <img src="assets/icons/bluestar.svg" alt="Icone d'étoile pleine">
+                                <img src="assets/icons/greystar.svg" alt="Icone d'étoile vide">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card_sponsored">
+                        <img class="card_sponsored_img" src="assets/img/au_coeur_de_leau.jpg" alt="Photo d'une chambre de l'hôtel">
+                        <div class="card_sponsored_content">
+                            <div class="card_sponsored_text">
+                                <h4>Au cœur de l’eau Chambres d’hôtes</h4>
+                                <span>Nuits à partir de 71€</span>
+                            </div>
+                            <div class="stars">
+                                <img src="assets/icons/bluestar.svg" alt="Icone d'étoile pleine">
+                                <img src="assets/icons/bluestar.svg" alt="Icone d'étoile pleine">
+                                <img src="assets/icons/bluestar.svg" alt="Icone d'étoile pleine">
+                                <img src="assets/icons/bluestar.svg" alt="Icone d'étoile pleine">
+                                <img src="assets/icons/greystar.svg" alt="Icone d'étoile vide">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card_sponsored">
+                        <img class="card_sponsored_img" src="assets/img/bleu_et_blanc.jpg" alt="Photo d'une chambre de l'hôtel">
+                        <div class="card_sponsored_content">
+                            <div class="card_sponsored_text">
+                                <h4>Hôtel Tout bleu et Blanc</h4>
+                                <span>Nuits à partir de 68€</span>
+                            </div>
+                            <div class="stars">
+                                <img src="assets/icons/bluestar.svg" alt="Icone d'étoile pleine">
+                                <img src="assets/icons/bluestar.svg" alt="Icone d'étoile pleine">
+                                <img src="assets/icons/bluestar.svg" alt="Icone d'étoile pleine">
+                                <img src="assets/icons/bluestar.svg" alt="Icone d'étoile pleine">
+                                <img src="assets/icons/greystar.svg" alt="Icone d'étoile vide">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="activities">
+            <h2>Activités à Marseille</h2>
+            <div id="activities_list">
+                <div class="big_card">
+                    <img class="big_card_img" src="assets/img/vieux_port.jpg" alt="Photographie du vieux port de Marseille">
+                    <h4>Vieux Port</h4>
+                </div>
+                <div class="big_card">
+                    <img class="big_card_img" src="assets/img/fort_pomegues.jpg" alt="Photographie du fort de Pomègues">
+                    <h4>Fort de Pomègues</h4>
+                </div>
+                <div class="big_card">
+                    <img class="big_card_img" src="assets/img/calanques.jpg" alt="Photographie des calanques de Marseille">
+                    <h4>Parc National des Calanques</h4>
+                </div>
+                <div class="big_card">
+                    <img class="big_card_img" src="assets/img/notre_dame.jpg" alt="Photographie de Notre Dame de la Garde">
+                    <h4>Notre-Dame-de-la-Garde</h4>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer_column">
+            <h3>A propos</h3>
+            <span>Fonctionnement du site</span>
+            <span>Conditions générales</span>
+            <span>Données et confidentialité</span>
+        </div>
+        <div class="footer_column">
+            <h3>Nos hébergements</h3>
+            <span>Charte qualité</span>
+            <span>Proposer votre hôtel</span>
+        </div>
+        <div class="footer_column">
+            <h3>Assistance</h3>
+            <span>Centre d'aide</span>
+            <span>Nous contacter</span>
+        </div>
+    </footer>
+</body>
+
+</html>
