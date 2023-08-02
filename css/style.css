@@ -19,6 +19,10 @@
     
     body {
         padding: 0px 50px;
+        max-width: 1440px;
+        min-width: 320px;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     h2 {
@@ -53,6 +57,9 @@
         border-radius: 60px;
         border: 2px solid #D9D9D9;
         cursor: pointer;
+        flex: 1 0;
+        max-width: 20%;
+        min-width: 110px;
     }
     
     .filter span {
@@ -75,17 +82,16 @@
         padding: 5px;
         flex-direction: column;
         align-items: flex-start;
-        min-width: 29%;
         gap: 4px;
         border-radius: 20px;
         background: #FFF;
         box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
         cursor: pointer;
-        flex: 1 0 0;
+        flex: 29% 1 0;
     }
     
     .card_img {
-        height: 120px;
+        aspect-ratio: 2/1;
         width: 100%;
         object-fit: cover;
         align-self: center;
@@ -104,20 +110,21 @@
         display: flex;
         justify-content: center;
         height: 144px;
+        min-width: 260px;
         align-self: stretch;
         padding: 5px;
         gap: 8px;
         border-radius: 20px;
         background: #FFF;
         box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
+        box-sizing: border-box;
         cursor: pointer;
     }
     
     .card_sponsored_img {
-        width: 40%;
+        aspect-ratio: 85/100;
         height: 100%;
         object-fit: cover;
-        flex-shrink: 0;
         border-radius: 16px 0px 0px 16px;
     }
     
@@ -138,24 +145,25 @@
     
     .big_card {
         display: flex;
-        height: 440px;
-        width: 22%;
+        min-width: 200px;
+        max-width: 30%;
+        flex: 21% 1 0;
         flex-direction: column;
-        justify-content: stretch;
-        align-items: flex-start;
+        justify-content: space-around;
         border-radius: 20px;
         box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
         cursor: pointer;
     }
     
     .big_card_img {
-        height: 85%;
-        width: 100%;
+        aspect-ratio: 70/100;
         object-fit: cover;
         border-radius: 20px 20px 0px 0px;
     }
     
-    .big_card h4 {
+    .big_card_title {
+        display: flex;
+        align-items: center;
         padding: 20px;
     }
     
@@ -306,14 +314,12 @@
         display: flex;
         flex-wrap: wrap;
         gap: 30px;
-        flex: 1 0 0;
     }
     
     #offers_sponsored {
         display: flex;
         max-width: 35%;
-        height: 100%;
-        padding: 30px 45px 30px 30px;
+        padding: 30px;
         flex-direction: column;
         align-items: stretch;
         gap: 30px;
@@ -341,6 +347,7 @@
         padding: 30px;
         flex-direction: column;
         gap: 30px;
+        box-sizing: border-box;
     }
     
     #activities_list {
@@ -364,14 +371,7 @@
     footer span:hover {
         color: rgba(0, 101, 252, 1);
     }
-    /* LARGE DESKTOP */
-    
-    @media (min-width:1900px) {
-        body {
-            padding: 0px 230px;
-        }
-    }
-    /*  TABLETS */
+    /* TABLETS */
     
     @media (max-width: 1024px) {
         #offers_list {
@@ -382,19 +382,13 @@
         #sectiongroup {
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;
             gap: 50px;
         }
         #offers_main {
             max-width: 100%;
         }
         #offers_sponsored {
-            display: flex;
             max-width: 100%;
-            padding: 30px;
-            flex-direction: column;
-            align-items: flex-start;
             gap: 20px;
         }
         #sponsored_list {
@@ -405,8 +399,8 @@
             gap: 20px;
         }
         .card_sponsored {
-            min-width: 200px;
-            flex: 1 0 0;
+            flex: 21% 1 0;
+            max-width: 48%;
         }
         .card_sponsored_content {
             padding: 2% 1% 1% 3%;
@@ -414,16 +408,13 @@
         #activities {
             padding: 0px;
         }
-        .big_card {
-            height: 270px;
-        }
         .big_card_img {
-            height: 70%;
+            aspect-ratio: 105/100;
         }
     }
     /* PHONES */
     
-    @media (max-width: 375px) {
+    @media (max-width: 769px) {
         body {
             padding: 0px;
         }
@@ -472,55 +463,42 @@
         #filterlist {
             flex-wrap: wrap;
         }
-        .filter {
-            max-width: 35%;
-            flex: 1 0 0;
-        }
         .filter span {
             font-size: 14px;
         }
         #sectiongroup {
             flex-direction: column-reverse;
         }
+        .card {
+            min-width: 230px;
+        }
         #offers_sponsored {
-            padding: 30px 20px;
-            flex-direction: column;
-            align-items: center;
             gap: 15px;
-            align-self: center;
         }
         #sponsored_list {
             flex-direction: column;
-            align-items: center;
-            justify-content: center;
             gap: 15px;
         }
         .card_sponsored {
             flex: none;
+            max-width: 100%;
         }
         #offers_main {
-            padding: 0px 20px;
-            max-width: 335px;
-            align-items: flex-start;
             gap: 15px;
             background: none;
-        }
-        .card {
-            min-width: 90%;
         }
         #offers_list {
             gap: 15px;
         }
         #activities {
-            max-width: 335px;
-            padding: 0px 20px;
-        }
-        #activities_list {
-            flex-direction: column;
+            padding: 0px 30px;
         }
         .big_card {
-            width: 90%;
-            height: 200px;
+            min-width: 230px;
+            max-width: 100%;
+        }
+        .big_card_img {
+            aspect-ratio: 175/100;
         }
         footer {
             flex-direction: column;

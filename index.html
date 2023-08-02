@@ -25,7 +25,7 @@
             <div id="searchbar">
                 <img src="assets/icons/geoloc.svg" alt="Icone de géolocalisation">
                 <input id="search_input" type="text" placeholder="Marseille,France">
-                <button id="search_btn"><img id="search_icon" src="assets/icons/lens.svg" alt="Icone de loupe"><div id="search_txt">Rechercher</div></button>
+                <button id="search_btn"><img id="search_icon" src="assets/icons/lens.svg" alt="Icone de loupe"><span id="search_txt">Rechercher</span></button>
             </div>
             <div id="filterbar">
                 <h3>Filtres</h3>
@@ -57,7 +57,7 @@
             <div id="offers_main">
                 <h2>Hébergements à Marseille</h2>
                 <div id="offers_list">
-                    <div class="card">
+                    <article class="card">
                         <img class="card_img" src="assets/img/hotel_du_port.jpg" alt="Photo d'une chambre de l'hôtel">
                         <div class="card_content">
                             <h4>Hôtel du port</h4>
@@ -70,8 +70,8 @@
                                 <img src="assets/icons/greystar.svg" alt="Icone d'étoile vide">
                             </div>
                         </div>
-                    </div>
-                    <div class="card">
+                    </article>
+                    <article class="card">
                         <img class="card_img" src="assets/img/chezAmina.jpg" alt="Photo d'une chambre de l'hôtel">
                         <div class="card_content">
                             <h4>Hôtel chez Amina</h4>
@@ -84,8 +84,8 @@
                                 <img src="assets/icons/greystar.svg" alt="Icone d'étoile vide">
                             </div>
                         </div>
-                    </div>
-                    <div class="card">
+                    </article>
+                    <article class="card">
                         <img class="card_img" src="assets/img/les_mouettes.jpg" alt="Photo d'une chambre de l'hôtel">
                         <div class="card_content">
                             <h4>Hôtel Les mouettes</h4>
@@ -98,8 +98,8 @@
                                 <img src="assets/icons/greystar.svg" alt="Icone d'étoile vide">
                             </div>
                         </div>
-                    </div>
-                    <div class="card">
+                    </article>
+                    <article class="card">
                         <img class="card_img" src="assets/img/hotel_de_la_mer.jpg" alt="Photo d'une chambre de l'hôtel">
                         <div class="card_content">
                             <h4>Hôtel de la mer</h4>
@@ -112,8 +112,8 @@
                                 <img src="assets/icons/greystar.svg" alt="Icone d'étoile vide">
                             </div>
                         </div>
-                    </div>
-                    <div class="card">
+                    </article>
+                    <article class="card">
                         <img class="card_img" src="assets/img/auberge_la_canebiere.jpg" alt="Photo d'une chambre de l'hôtel">
                         <div class="card_content">
                             <h4>Auberge La Canebière</h4>
@@ -126,8 +126,8 @@
                                 <img src="assets/icons/greystar.svg" alt="Icone d'étoile vide">
                             </div>
                         </div>
-                    </div>
-                    <div class="card">
+                    </article>
+                    <article class="card">
                         <img class="card_img" src="assets/img/auberge_le_panier.jpg" alt="Photo d'une chambre de l'hôtel">
                         <div class="card_content">
                             <h4>Auberge Le Panier</h4>
@@ -140,7 +140,7 @@
                                 <img src="assets/icons/greystar.svg" alt="Icone d'étoile vide">
                             </div>
                         </div>
-                    </div>
+                    </article>
                 </div>
                 <h3>Afficher plus</h3>
             </div>
@@ -150,7 +150,7 @@
                     <img src="assets/icons/graph.svg" alt="Icone de graphique">
                 </div>
                 <div id="sponsored_list">
-                    <div class="card_sponsored">
+                    <article class="card_sponsored">
                         <img class="card_sponsored_img" src="assets/img/auberge_la_canebiere.jpg" alt="Photo d'une chambre de l'hôtel">
                         <div class="card_sponsored_content">
                             <div class="card_sponsored_text">
@@ -165,8 +165,8 @@
                                 <img src="assets/icons/greystar.svg" alt="Icone d'étoile vide">
                             </div>
                         </div>
-                    </div>
-                    <div class="card_sponsored">
+                    </article>
+                    <article class="card_sponsored">
                         <img class="card_sponsored_img" src="assets/img/au_coeur_de_leau.jpg" alt="Photo d'une chambre de l'hôtel">
                         <div class="card_sponsored_content">
                             <div class="card_sponsored_text">
@@ -181,8 +181,8 @@
                                 <img src="assets/icons/greystar.svg" alt="Icone d'étoile vide">
                             </div>
                         </div>
-                    </div>
-                    <div class="card_sponsored">
+                    </article>
+                    <article class="card_sponsored">
                         <img class="card_sponsored_img" src="assets/img/bleu_et_blanc.jpg" alt="Photo d'une chambre de l'hôtel">
                         <div class="card_sponsored_content">
                             <div class="card_sponsored_text">
@@ -197,29 +197,37 @@
                                 <img src="assets/icons/greystar.svg" alt="Icone d'étoile vide">
                             </div>
                         </div>
-                    </div>
+                    </article>
                 </div>
             </div>
         </section>
         <section id="activities">
             <h2>Activités à Marseille</h2>
             <div id="activities_list">
-                <div class="big_card">
+                <article class="big_card">
                     <img class="big_card_img" src="assets/img/vieux_port.jpg" alt="Photographie du vieux port de Marseille">
-                    <h4>Vieux Port</h4>
-                </div>
-                <div class="big_card">
+                    <div class="big_card_title">
+                        <h4>Vieux Port</h4>
+                    </div>
+                </article>
+                <article class="big_card">
                     <img class="big_card_img" src="assets/img/fort_pomegues.jpg" alt="Photographie du fort de Pomègues">
-                    <h4>Fort de Pomègues</h4>
-                </div>
-                <div class="big_card">
+                    <div class="big_card_title">
+                        <h4>Fort de Pomègues</h4>
+                    </div>
+                </article>
+                <article class="big_card">
                     <img class="big_card_img" src="assets/img/calanques.jpg" alt="Photographie des calanques de Marseille">
-                    <h4>Parc National des Calanques</h4>
-                </div>
-                <div class="big_card">
+                    <div class="big_card_title">
+                        <h4>Parc National des Calanques</h4>
+                    </div>
+                </article>
+                <article class="big_card">
                     <img class="big_card_img" src="assets/img/notre_dame.jpg" alt="Photographie de Notre Dame de la Garde">
-                    <h4>Notre-Dame-de-la-Garde</h4>
-                </div>
+                    <div class="big_card_title">
+                        <h4>Notre-Dame-de-la-Garde</h4>
+                    </div>
+                </article>
             </div>
         </section>
     </main>
