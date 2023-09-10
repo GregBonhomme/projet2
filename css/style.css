@@ -42,6 +42,11 @@
         font-size: 16px;
         font-weight: 700;
     }
+    
+    a {
+        text-decoration: none;
+        color: black;
+    }
     /* CLASSES */
     
     .row {
@@ -58,7 +63,6 @@
         border: 2px solid #D9D9D9;
         cursor: pointer;
         flex: 1 0;
-        max-width: 20%;
         min-width: 130px;
     }
     
@@ -71,12 +75,6 @@
         background-color: rgba(222, 235, 255, 1);
     }
     
-    .hidden {
-        opacity: 0;
-        width: 0px;
-        height: 0px;
-    }
-    
     .card {
         display: flex;
         padding: 5px;
@@ -86,7 +84,6 @@
         border-radius: 20px;
         background: #FFF;
         box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
-        cursor: pointer;
         flex: 29% 1 0;
     }
     
@@ -118,7 +115,6 @@
         background: #FFF;
         box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
         box-sizing: border-box;
-        cursor: pointer;
     }
     
     .card_sponsored_img {
@@ -152,7 +148,6 @@
         justify-content: space-around;
         border-radius: 20px;
         box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
-        cursor: pointer;
     }
     
     .big_card_img {
@@ -195,12 +190,10 @@
         justify-content: flex-start;
         align-items: center;
         gap: 70px;
-        padding: 0px 25px 25px 25px;
+        padding-bottom: 25px;
     }
     
     nav a {
-        text-decoration: none;
-        color: black;
         padding-top: 16px;
         border: 0px solid #ffffff;
         border-top-width: 2px;
@@ -476,6 +469,7 @@
             min-width: 230px;
         }
         #offers_sponsored {
+            border-radius: 0;
             gap: 15px;
         }
         #sponsored_list {
